@@ -1,0 +1,151 @@
+<!doctype = html>
+
+<html lang = "en">
+	<head>
+		<meta charset = "UTF-8">
+		<meta name = "viewport" content = "width-device-width, initial scale 1.0">
+		<meta http-equiv = "X-UA-Compatible" content = "ie-edge">
+		<link rel = "stylesheet" href = "css/style.css">
+		<title> Donovan's Job Portfolio </title>
+	</head>
+	
+	<!-- 
+		MIKE : a "tag" is anything in between <>. So far instance <binky> would be called the "binky tag".
+		Any text that is sandwiched between tags is the text that will appear on screen. So if we had 
+		<li> <p> THIS WILL APPEAR ON SCREEN </p> </li>, then "THIS TEXT WILL APPEAR ON SCREEN" is what you would see. 
+		Also, <a href = ""> y </a> is the link tag, and inbetween
+		the quotations is where you put the address. The thing inbetween the a tag is the text that a user will click
+		to go to that link. So if I did <a href = "www.google.com"> BINKY GANG </a> and loaded the site you would see 
+		"BINKY GANG" on the screen and if you clicked the "BINKY GANG" text then it would take you to google.com
+	-->
+	<body>
+		<div class  = "container navbar">
+			<header>
+				
+				<!-- 
+					MIKE : This is the navigation bar that appears at the top of the screen. It contains buttons that link to other areas on the page.
+				-->
+				<nav>
+					<ul>
+						<li> <img src = "Images/bookTrans.png"> <a href = "#aboutMe"> About Me  </a> </li>
+						<li> <img src = "Images/pracky.png"> <a href = "#projects"> Projects </a> </li>
+						<li> <img src = "Images/phone.jpg"> <a href = "#contactMe"> Contact Me </a> </li>
+					</ul>
+				</nav>
+			</header>
+		</div>
+		
+		<div class = "container main-info-section">
+			<div class = "text"> 
+				<h1>
+					<!-- MIKE : Replace "Donovan Henry" with "Michael Pearce" -->
+					<span class = "name"> Donovan Henry's Job Portfolio: </span>
+					<br />
+				</h1>
+					
+				<!-- MIKE : This section is where you put the psychology tools you're comfortable with. If there aren't
+				any tools/software that's common use in psychology then you can erase this whole area. For instance, maybe
+				put the fields of psychology that you're good at / have practice in -->
+				<p> <span class = "textIdentifier"> Languages: </span> Java / C++ / Python / C / C# / JavaScript / XHTML / CSS / Assembly </p>
+				<p> <span class = "textIdentifier"> Frameworks: </span> UNITY / MML (Multimedia Logic) </p>
+				<p> <span class = "textIdentifier"> Version control: </span> Git / GitHub </p> 
+				<p> <span class = "textIdentifier"> Databases: </span> PostgreSQL </p> 
+				<p> <span class = "textIdentifier"> Libraries: </span> React </p> 
+
+				<!-- This is the button that links to the second html page with the resumé -->
+				<a href = "resume.html"> My Resumé </a>
+				
+			</div>
+		</div>
+		
+		<!-- 
+			MIKE : This is where you would put why you're passionate about psychology or why you are a good psychologist etc 
+			Everything between <p> and </p> is the text that appears on screen. Every new <p> </p> represents a new paragraph and will 
+			create a new line. If you want everything in one paragraph then you should only use one <p> </p>
+		-->
+		<div class = "container about" id = "about">
+			<a name = "aboutMe"> <h1> About Me </h1> </a>
+			<div class = "about-me-info">
+				<p> This is holding a place for a future about me. This is holding a place for a future about me. This is holding a place for a future about me. This is holding a place for a future about me. This is holding a place for a future about me. </p>
+				<p> This is holding a place for a future about me. This is holding a place for a future about me. This is holding a place for a future about me. This is holding a place for a future about me. This is holding a place for a future about me. </p>
+				<p> This is holding a place for a future about me. This is holding a place for a future about me. This is holding a place for a future about me. This is holding a place for a future about me. This is holding a place for a future about me. </p>
+			</div>
+		</div>
+		
+		<div class = "container work" id = "work"> 
+			<a name = "projects" > <h1> My Projects </h1> </a>
+			<div class = "work-category">
+
+				<!--
+					This is the table that will contain all of the projects that I've worked on. It also provides a description of the project,
+					and an image that turns into a gif of a playthrough if you hover over it. The image also functions as a link that takes you
+					to the project's github. <tr> represents a row and each <td> represents a column in that row. 
+				-->
+				<table width = "50%" cellspacing = "50">
+
+					<!-- This row creates the general template for projects. Namely it represents what each column will be -->
+					<tr>
+						<th class = "generalTemplate" id = "genName"> Project Name: </th>
+						<th class = "generalTemplate"> Description: </th>
+						<th class = "generalTemplate"> Link to Project's GitHub (hover for gif): </th>
+					</tr>
+					
+					<!-- From this point down in the table, each row will represent a project -->
+					<tr id = "specEx">
+						<th id = "projectName"> 
+							Attack on Jupiter: 
+						</th> 
+						
+						<td id = "projectDesc">
+							I, along with three other classmates, designed and deployed a 2-dimensional video game (created using Java FX’s API) in which the user has to defeat three bosses. My role in the game’s development was lead designer of the UML and lead/full-stack developer of the game itself.
+						</td>
+
+						<td> 
+							<span id = "aoj2gif"> 
+								<a href = "https://github.com/Donovanphenry/Attack-on-Jupiter"> <img width = 100% height = 100% src = "Images/AoJMenu.png"> 
+								</a> 
+							</span> 
+						</td>
+						
+					</tr>
+
+					<tr id = "specEx">
+						<th id = "projectName"> Finding Nemo Maze Solver: </th> 
+						
+						<td id = "projectDesc"> I designed a linked list, stack, queue and binary search tree and integrated them in a maze game. I then came up with an algorithm to find the exit of the maze based on a depth-first search. </td>
+						
+						<td>
+							<span id = "fn2gif"> 
+								<a href = "https://github.com/Donovanphenry/FInding-Nemo"> <img width = 100% height = 100% src = "Images/Finding Nemo Changed Dims.png"> 
+								</a> 
+							</span>
+						</td>
+					</tr>
+				</table>
+			</div>
+			
+		</div>
+		
+		<!-- MIKE: This part is not yet operational. It's not too hard to program, I'll let you know when I get to it. -->
+		<div class = "container contact" id = "contact">
+			<a name = "contactMe"> <h1> Contact Me </h1> </a>
+			<form> 
+				<input type = "text" name = "name" placeHolder = "Full Name">
+				<input type = "email" placeHolder =  "Email">
+				<input  type = "email" placeHolder = "donovanphenry@gmail.com" disabled>
+				<textarea name = "message" cols = "30" rows = "10" placeHolder = "Your message here"> </textarea>
+				<input type = "submit" value = "Send email">
+			</form>	
+		</div>
+		
+		<br />
+		
+		<footer> 
+			<hr />
+
+			<!-- This lets everyone know that YOU reserve all rights to the page -->
+			<p> 2020 Copyright. All Rights Reserved </p>
+		</footer>
+	</body>
+	
+</html>
